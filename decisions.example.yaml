@@ -1,0 +1,32 @@
+# Example decisions after the first trial run. In a real project each line is
+# agreed with the data owner named in "by", and this file is kept with the
+# migration so anyone can see why a record was changed.
+decisions:
+  - entity: customers
+    record: C1019
+    action: set
+    field: VATNo
+    value: DK31415926
+    by: AR team
+    reason: VAT number confirmed from the customer's invoice
+
+  - entity: items
+    record: ITM-207
+    action: drop
+    where: {UnitPrice: "1.713,06"}
+    by: Pricing owner
+    reason: old price from 2023, 317.87 is the current list price
+
+  - entity: open_invoices
+    record: INV-5033
+    action: set
+    field: DocType
+    value: CreditNote
+    by: Finance
+    reason: credit note posted with the wrong document type
+
+  - entity: open_invoices
+    record: INV-5040
+    action: drop
+    by: AR team
+    reason: test customer C1999 deleted in 2024, entry was never real

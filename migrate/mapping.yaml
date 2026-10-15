@@ -1,0 +1,45 @@
+# Field mapping from the legacy ERP export to the target load templates.
+# Target column names follow the style of Dynamics 365 Business Central
+# configuration packages. Change this file, not the code, when a field moves.
+
+customers:
+  source: legacy_customers.csv
+  key: CustNo
+  target: Customers
+  fields:
+    No.: CustNo
+    Name: Name
+    VAT Registration No.: VATNo
+    Country/Region Code: Country
+    City: City
+    E-Mail: Email
+    Currency Code: Currency
+    Created Date: Created
+
+items:
+  source: legacy_items.csv
+  key: ItemNo
+  target: Items
+  fields:
+    No.: ItemNo
+    Description: Description
+    Unit Price: UnitPrice
+    Base Unit of Measure: Unit
+
+open_invoices:
+  source: legacy_open_invoices.csv
+  key: DocNo
+  target: OpenCustomerEntries
+  fields:
+    Document No.: DocNo
+    Document Type: DocType
+    Customer No.: CustNo
+    Posting Date: DocDate
+    Due Date: DueDate
+    Currency Code: Currency
+    Remaining Amount: OpenAmount
+
+# The local currency of the target company. Danish VAT numbers are required.
+company:
+  local_currency: DKK
+  vat_required_countries: [DK]

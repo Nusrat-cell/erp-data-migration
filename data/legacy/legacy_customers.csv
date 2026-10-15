@@ -1,0 +1,33 @@
+CustNo;Name;VATNo;Country;City;Email;Currency;Created
+C1001;Nordhavn Byg A/S;DK53464097;Danmark;Nordhavn;ap@nordhavnbyg.example;DKK;02-11-2021
+C1002;Lyngby Trading A/S;DK81924865;DK;Lyngby;ap@lyngbytrading.example;DKK;2020-10-02
+C1003;Aros Maskiner A/S;DK38816302;DK;Aros;ap@arosmaskiner.example;DKK;14-07-2016
+C1004;Fyns Fragt A/S;DK22175294;dk;Fyns;ap@fynsfragt.example;DKK;2015-10-04
+C1005;Kattegat Foods A/S;DK94641177;DK;Kattegat;ap@kattegatfoods.example;DKK;13-10-2024
+C1006;Vestjysk Stål A/S;DK39673100;DK;Vestjysk;ap@vestjyskstaal.example;DKK;10-03-2023
+C1007;Malmö Logistik AB;SE82569631;SE;Malmö;ap@malmologistik.example;SEK;2024-05-18
+C1008;Göteborg Verktyg AB;SE34256684;SE;Göteborg;ap@goteborgverktyg.example;SEK;21-10-2024
+C1009;Oslo Bygg AS;NO23076910;Norway;Oslo;ap@oslobygg.example;NOK;2016-10-02
+C1010;Hamburg Hafen Handel GmbH;DE76627625;Germany;Hamburg;ap@hamburghafenhandel.example;EUR;25-07-2023
+C1011;Berlin Werkzeug GmbH;DE88592782;Tyskland;Berlin;ap@berlinwerkzeug.example;EUR;2020-05-08
+C1012;Øresund Data A/S;DK42762079;DK;Øresund;ap@oresunddata.example;DKK;17-05-2024
+C1013;Roskilde Energi A/S;DK56100526;dk;Roskilde;ap@roskildeenergi.example;DKK;03-10-2019
+C1014;Aalborg Plast A/S;DK66119495;Danmark;Aalborg;ap@aalborgplast.example;DKK;16-03-2020
+C1015;Herning Tekstil A/S;DK99686414;DK;Herning;ap@herningtekstil.example;DKK;2023-10-26
+C1016;Kolding Kemi A/S;DK52110478;Denmark;Kolding;ap@koldingkemi.example;DKK;2020-10-16
+C1017;Odense Optik A/S;DK71230843;DK;Odense;ap@odenseoptik.example;DKK;2016-05-16
+C1018;Esbjerg Offshore A/S;DK18724149;DK;Esbjerg;ap@esbjergoffshore.example;DKK;2019-11-19
+C1019;Silkeborg Papir A/S;;Denmark;Silkeborg;ap@silkeborgpapir.example;DKK;12-11-2021
+C1020;Viborg Vinduer A/S;DK71967692;Denmark;Viborg;ap@viborgvinduer.example;DKK;04-10-2017
+C1021;Holstebro Hydraulik A/S;DK39287351;Denmark;Holstebro;ap@holstebrohydraulik.example;DKK;08-12-2017
+C1022;Uppsala Elektro AB;SE76640001;SE;Uppsala;ap@uppsalaelektro.example;SEK;2017-08-13
+C1023;Bergen Marine AS;NO28377915;Norge;Bergen;ap@;NOK;23-05-2023
+C1024;Kiel Komponenten GmbH;DE58153450;Germany;Kiel;ap@kielkomponenten.example;EUR;05-04-2021
+C1025;Randers Reb A/S;DK30306925;Danmark;Randers;ap@randersreb.example;DKK;2018-01-16
+C1026;Horsens Huse A/S;DK34473646;Denmark;Horsens;ap@horsenshuse.example;DKK;05-01-2019
+C1027;Vejle Ventilation A/S;DK59560375;Denmark;Vejle;ap@vejleventilation.example;DKK;2017-12-28
+C1028;Næstved Nødstrøm A/S;DK92891895;DK;Næstved;ap@naestvednodstrom.example;DKK;2022-11-26
+C1029;Hillerød Hjul A/S;DK63428001;dk;Hillerød;ap@hillerodhjul.example;DKK;2021-02-16
+C1030;Lund Labs AB;SE18354761;SE;Lund;ap@lundlabs.example;SEK;15-04-2016
+C1007;Malmö Logistik AB;SE82569631;SE;Malmö;ap@malmologistik.example;SEK;2024-05-18
+C1031;Øresund Data AS;DK42762079;DK;Øresund;ap@oresunddata.example;DKK;2025-03-14

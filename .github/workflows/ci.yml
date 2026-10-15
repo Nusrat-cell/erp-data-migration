@@ -1,0 +1,31 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -r requirements.txt
+      - name: Tests
+        run: python -m unittest discover -s tests -v
+      - name: Trial run must be NO-GO (blocking issues are caught)
+        run: |
+          python -m migrate sample --out data/legacy
+          ! python -m migrate run --source data/legacy --out output --strict
+      - name: Run with decisions must be GO
+        run: python -m migrate run --source data/legacy --decisions decisions.example.yaml --out output_go --strict
+      - uses: actions/upload-artifact@v4
+        if: matrix.python == '3.12'
+        with:
+          name: migration-report
+          path: |
+            output/migration_report.xlsx
+            output_go/migration_report.xlsx
